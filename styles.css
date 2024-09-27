@@ -1,0 +1,269 @@
+html,
+body {
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  font-family: fib;
+}
+
+@font-face {
+  font-family: 'fib';
+  src: url('source/font/fibberish.ttf') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media (max-width: 600px) { 
+    .pic {
+       width: 350px !important; /*for later */
+    }
+  }
+
+.center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+
+.m-card {
+  border: 3px #bf244a dashed;
+  padding: 5px;
+  transition: all 0.3s ease; 
+}
+
+.m-card:hover {
+  padding: 7px; 
+  transform: scale(1.1);
+  box-shadow: 0 0 100px rgba(155, 82, 97, 0.25); 
+}
+
+.additional-text {
+  margin-top: 10px;
+  color: #ffffff;
+}
+
+.members,
+.grp {
+  color: white;
+  font-family: fib;
+}
+
+.members{
+  font-style: italic;
+  display: none
+}
+
+.grp{
+  scale: 2.2;
+  color: #bf244a;
+}
+
+.texts {
+  line-height: 0.1em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pic {
+  width: 350px;
+  border-radius: 5px;
+  padding-bottom: 5px;
+}
+
+.svg-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.v {
+  color: #bf244a;
+  border: 1px #bf244a solid;
+  padding: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+a{
+  background-color: rgb(0, 0, 0);
+  transition: transform 0.3s ease;
+}
+
+a:hover{
+  transform: scale(1.05);
+}
+
+
+.hidden {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.circle {
+  display: none; /*idk keep for later */
+  position: absolute;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  box-shadow: 0 0 400px rgba(255, 255, 255, 0.8),
+              0 0 400px rgba(255, 255, 255, 0.8);
+}
+
+.top-right {
+  top: -100px;
+  right: -100px;
+}
+
+.bottom-left {
+  bottom: -100px;
+  left: -100px;
+}
+
+.container-g {
+  display: flex;
+  align-items: center; 
+  color: #bf244a;
+  border: 1px #bf244a solid;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.container-g:hover {
+  transform: scale(1.05);
+}
+
+.text-g {
+  margin-left: 8px; 
+  font-size: 16px; 
+}
+
+.gear{
+  width: 15px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.main-site-wrapper{
+  display: none
+}
+
+.xdxdxdxdxdxd-container{
+  display: flex; 
+  justify-content: center;
+  align-items: center; 
+  height: 100%; 
+  scale: 2;
+}
+
+.welcome-anyways-i-dont-care-lol-shut-the-fuck-up-please-leave-me-alone-xdxdxdxdxdxd{
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.welcome-anyways-i-dont-care-lol-shut-the-fuck-up-please-leave-me-alone-xdxdxdxdxdxd:hover{
+  transform: scale(1.3);
+  color: #bf244a;
+  text-shadow: 0px 0px 5px #bf244a;
+}
+
+/* .pml{
+  transition: all 0.3s ease; 
+}
+
+
+.pml:hover{
+  color: #bf244a;
+  cursor: pointer;
+} */
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: rgb(0, 0, 0);
+  padding: 20px;
+  border: 3px #bf244a dashed;
+  padding: 5px;
+  position: relative;
+  color: white;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+  color: #bf244a;
+}
+
+.nld{
+  color: #bf244a;
+}
+
+.roles{
+  color: #bf244a;
+  border: 1px #bf244a solid;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pad2px{
+  padding: 2px;
+}
+
+.bb-con{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px #bf244a solid;
+  border-radius: 5px;
+  width: 92%;
+  margin: 0 auto;
+  background-color: rgb(0, 0, 0);
+  transition: transform 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.bb{
+  margin: 0 auto;
+  color: #bf244a;
+  cursor: pointer;
+  text-align: center;
+  font-size: larger;
+}
+
+.bb-con:hover{
+  transform: scale(1.05);
+}
